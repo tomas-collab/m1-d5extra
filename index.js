@@ -3,6 +3,18 @@ Write a function "checkArray" which receives an array of random numbers (created
 The function returns the sum of the numbers bigger than 5.
 */
 
+function checkArray(giveMeRandom){
+    let sum = 0
+    for(let i = 0;i<giveMeRandom.length; i++){
+        if(giveMeRandom[i]>5){
+            sum +=giveMeRandom[i]
+        }
+    }
+    return sum
+    
+}
+
+console.log(checkArray([1,2,5,6,7,8,0,43,24,12,34]))
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 12
