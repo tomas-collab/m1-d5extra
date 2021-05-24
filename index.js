@@ -15,19 +15,44 @@ function checkArray(giveMeRandom){
 }
 
 console.log(checkArray([1,2,5,6,7,8,0,43,24,12,34]))
-/* WRITE YOUR CODE HERE */
+
 
 /* EXERCISE 12
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
 Create a function "shippingCartTotal" which calculates the total due to the shop.
 */
+function shippingCartTotal(){
+shoppingCart= [
+    {name: "rice",price: 43, Id: "R12", Quantity: "2kg"},
+    {name: "oil",price: 500, Id: "O2", Quantity: "2Litres"},
+    {name: "pants",price: 50, Id: "P22", Quantity: 3}
+    
+]
+let TotalDue = shoppingCart.reduce(function(prev,cur){
+    return prev + cur.price
+}, 0)
 
-/* WRITE YOUR CODE HERE */
-
+}
+console.log(shippingCartTotal(shoppingCart))
 /* EXERCISE 13
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
 Create a function "addToShoppingCart" which receives a new object, adds it to shoppingCart and returns the total number of items in the shoppingCart.
 */
+function shippingCartTotal(){
+    shoppingCart= [
+        {name: "rice",price: 43, Id: "R12", Quantity: "2kg"},
+        {name: "oil",price: 500, Id: "O2", Quantity: "2Litres"},
+        {name: "pants",price: 50, Id: "P22", Quantity: 3}
+        
+    ]
+    let fruit = {name: "fruits",price: 50, Id: "F12", Quantity: "4kg"}
+    shoppingCart.push(fruit)
+    const count = shoppingCart.filter(item => item.status === '0').length
+    return shoppingCart 
+    
+    
+    
+    }
 
 /* WRITE YOUR CODE HERE */
 
